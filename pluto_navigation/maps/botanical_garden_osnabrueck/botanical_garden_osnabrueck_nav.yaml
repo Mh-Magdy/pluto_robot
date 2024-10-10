@@ -1,6 +1,6 @@
 planners:
-  - name: 'wave_front_planner'
-    type: 'wave_front_planner/WaveFrontPlanner'
+  - name: 'cvp_mesh_planner'
+    type: 'cvp_mesh_planner/CVPMeshPlanner'
   - name: 'dijkstra_mesh_planner'
     type: 'dijkstra_mesh_planner/DijkstraMeshPlanner'
   - name: 'mmp_planner'
@@ -9,10 +9,6 @@ planners:
 controllers:
   - name: 'mesh_controller'
     type: 'mesh_controller/MeshController'
-
-wave_front_planner:
-  cost_limit: 1.0
-  publish_vector_field: true
 
 dijkstra_mesh_planner:
   cost_limit: 1.0

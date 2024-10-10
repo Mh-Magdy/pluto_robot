@@ -1,5 +1,5 @@
 global_frame: map
-robot_frame: base_footprint
+robot_frame: base_link
 robot_base_frame: base_link
 
 mesh_part: mesh

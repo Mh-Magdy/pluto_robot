@@ -153,9 +153,9 @@ class Planning(smach.StateMachine):
     def planner_goal_cb(user_data, goal):
         rospy.loginfo("planner goal cb")
         goal.use_start_pose = False
-        goal.tolerance = 0.2  # 20cm tolerance to the target
+        goal.tolerance = 0.8  # 20cm tolerance to the target
         goal.target_pose = user_data.target_pose
-        goal.planner = 'wave_front_planner'  
+        goal.planner = 'cvp_mesh_planner'  
 
     @staticmethod
     @smach.cb_interface(

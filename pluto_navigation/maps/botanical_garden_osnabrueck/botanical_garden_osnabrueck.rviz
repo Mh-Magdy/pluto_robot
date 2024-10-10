@@ -125,7 +125,8 @@ Visualization Manager:
       Radius: 0.029999999329447746
       Shaft Diameter: 0.009999999776482582
       Shaft Length: 0.009999999776482582
-      Topic: /move_base_flex/wave_front_planner/path
+      # I've editted here
+      Topic: /move_base_flex/cvp_mesh_planner/path
       Unreliable: false
       Value: true
     - Class: rviz/MarkerArray
